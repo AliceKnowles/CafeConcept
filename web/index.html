@@ -105,15 +105,15 @@ and open the template in the editor.
             </div>
         </div>
         <hr>
-        <div id="footer" class="container-fluid">
-            <div class="col-sm-6">
+        <div id="footer" class="container-fluid row">
+            <div class="col-sm-6"> 
                 <h3>Visit Us</h3>
-                <hr>
+                <br>
                 <p>Monday-Friday 8:00 - 5:00<br>
                     Saturday-Sunday 9:00 - 5:00<br>
                     <br>
                     <span class="glyphicon glyphicon-earphone"></span> 555-3461
-                    </br><br>
+                    <br>
                     83 Penrose Road<br>
                     Mount Wellington<br>
                     Auckland<br>
@@ -245,21 +245,15 @@ and open the template in the editor.
        $(document).ready(function(){
   // Add smooth scrolling to all links
   $(".smoothScroll").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
-      
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 500, function(){
-        // Add hash (#) to URL
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 });
    </script>
