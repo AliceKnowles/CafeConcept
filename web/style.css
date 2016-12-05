@@ -1,0 +1,162 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2/12/2016, 6:55:22 PM
+    Author     : Alice
+*/
+body{
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+
+.menu-container{
+    height: 25vh;
+    min-height: 100px;
+    width:100%;
+    transition: height 0.5s;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3%;
+    cursor: pointer;
+/*    z-index: 100; not working because position is not absolute*/
+    position: relative; 
+}
+#welcome{ 
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("img/welcome.jpg");
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    cursor: default;
+}
+#menuGroup{
+    padding-top: 50px;
+}
+#breakfast{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("img/breakfast.jpg")
+}
+#drinks{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("img/drinks.jpg");
+}
+#lunch{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("img/lunch.jpg");
+}
+nav{
+    position: absolute;
+    z-index:99999999;
+    top: 1px;
+    width: 100%;
+}
+.glyphicon-menu-hamburger{
+    color:white;
+}
+.navbar-default{
+    background-color: inherit;
+    background-color: rgba(0,0,0,0.6);
+}
+#welcomemsg{
+    position: absolute;
+    top: 35vh;
+    text-align: center;
+    width:100%;
+}
+.menu-item-head{
+    font-size: 16px;
+    padding-left: 2%;
+}
+.menu-item-desc{
+    margin-bottom: 15px; 
+}
+.glyphicon-earphone{
+    padding-right: 5px;
+    font-size:15px;
+}
+h1{
+    font-size: 55px;
+}
+.blackFilm{
+    background-color: rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+}
+.film{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.glyphicon{
+    font-size: 20px;
+}
+.film h2{
+    padding-top: 2%;
+    padding-left: 5%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: yellow;
+}
+#footer{
+    text-align: center;
+    margin: 50px 0px;
+    width:100%;
+    position: relative;
+    margin-bottom: 60px;
+}
+#map{
+    margin: 0 auto;
+    z-index: -1;
+}
+.fix-nav {
+  position: fixed;
+  background-color: rgba(0,0,0,0.8); 
+  border-bottom: 1px solid rgba(255,255,255,1);
+  width: 100%;
+  top: 0;
+  transition: background-color 1s;
+  color:white;
+}
+#social{
+    margin: 35px 5px;
+}
+#social > a > i{
+    font-size: 25px;
+    margin: 10px 5px;
+}
+button{
+    border: none;
+}
+#navIcon{
+    border:none;
+}
+#navIcon:hover{
+    background: none;
+}
+#navHead{
+    position: absolute;
+    width: 150px;
+    margin-left: 3%;
+    top: -5px;
+}
+li{
+    padding-bottom: 5px;
+}
+.film h5{
+    padding-left: 5%;
+}
+.center{
+    text-align: center;
+}

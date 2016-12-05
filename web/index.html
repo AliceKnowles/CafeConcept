@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>The Eatery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!--to embed social media icons-->
+        <script src="https://use.fontawesome.com/ddda57a043.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/coffeeCup.png">  
+    </head> 
+    
+    <body> 
+        <nav id="topNav" class="nav navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header"> 
+                    <h3 id="navHead"><a href="#welcome" class="smoothScroll">The Eatery</a></h3>
+                    <a id="navIcon" class="navbar-toggle" data-toggle="collapse" data-target="#collapsableNav">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </a>
+                </div>
+                <div id="collapsableNav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="smoothScroll" href="#accolades" style="color:white">Accolades</a></li>
+                        <li><a class="smoothScroll" href="#menuGroup" style="color:white">Menu</a></li>
+                        <li><a class="smoothScroll" href="#footer" style="color:white">Find Us</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </nav>
+        <div id="welcome" class="menu-container">
+            <div id="welcomemsg">
+                <h1>
+                    The Eatery
+                </h1>
+                <p>
+                    Established 1972
+                </p>
+            </div>
+
+        </div>
+        
+        <div id="accolades" class="container-fluid center">
+            <br><br><br>
+            <h2 class="center">Accolades</h2>
+            <br>
+            <div class="container-fluid center">
+                    <span>Heineken Burger Of The Year Award - Silver</span>
+                    - Awarded to our Blue Cod Burger
+                    <br>
+                    <span class="lgText">Huhtamaki 2016 New Zealand Coffee Awards - Gold</span>
+                    - Awarded to our Flat White, created by Laura Mill
+                    <br>
+                    <span class="lgText">Metro Magazine Runner-up Best Brunch</span>
+                    - In recognition of our Mixed Berry Waffles
+            </div>
+        </div>
+        <br><br><br><br>
+        
+            <div id="breakfast" class="menu-container" data-toggle="collapse" data-target="#breakfastMenu">
+                <div class="film" >
+                    <h2>Breakfast <span class="glyphicon glyphicon-chevron-down"></span></h2>
+                    <h5>All Day</h5>
+                    <div id="breakfastMenu" class="collapse menuItems">
+                        <ul id="breakfastOptions" class="container-fluid">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="lunch" class="menu-container" data-toggle="collapse" data-target="#lunchMenu">
+                <div class="film">
+                    <h2>Lunch <span class="glyphicon glyphicon-chevron-down"></span></h2>
+                    <h5>11am - 2pm</h5>
+                    <div id="lunchMenu" class="collapse menuItems">
+                        <ul id="lunchOptions" class="container-fluid">
+
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <div id="drinks" class="menu-container" data-toggle="collapse" data-target="#drinksMenu">
+                <div class="film">
+                    <h2><a>Drinks <span class="glyphicon glyphicon-chevron-down"></span></a></h2>
+                    <div id="drinksMenu" class="collapse menuItems">
+                        <ul id="drinkOptions" class="container">
+                            <li>
+                                <div class="row">
+                                    <span class="col-xs-offset-5 col-sm-offset-6 col-sm-1 col-xs-2">Regular</span>
+                                    <span class="col-xs-offset-1 col-sm-offset-2 col-sm-1 col-xs-2">Large</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <hr>
+        <div id="footer" class="container-fluid">
+            <div class="col-sm-6">
+                <h3>Visit Us</h3>
+                <hr>
+                <p>Monday-Friday 8:00 - 5:00<br>
+                    Saturday-Sunday 9:00 - 5:00<br>
+                    <br>
+                    <span class="glyphicon glyphicon-earphone"></span> 555-3461
+                    </br><br>
+                    83 Penrose Road<br>
+                    Mount Wellington<br>
+                    Auckland<br>
+                    1060
+                </p>
+                <div id="social" class="container-fluid">
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                </div> 
+            </div>
+            <iframe id="map" class="col-sm-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.2767058789004!2d174.82023895020066!3d-36.90764799040972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d492244c89a9d%3A0xf5af63db308cb7fa!2s83+Penrose+Rd%2C+Mount+Wellington%2C+Auckland+1060!5e0!3m2!1sen!2snz!4v1480665295921" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+        
+<!--        fill the drinks menu-->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                function drink(name, regular, large){
+                    this.name = name;
+                    this.regular = formatPrice(regular);
+                    if (large === undefined){
+                         this.large = "-";
+                    } else{
+                        this.large = formatPrice(large);
+                    }
+                }
+                function formatPrice(price){
+                    price = Math.round(price *10)/10;
+                    price = price.toFixed(1);
+                    return price;
+                }
+                function drinkData(){
+                    var drinks = [];
+                    drinks[0] = new drink("Americano", 4, 5);
+                    drinks[1] = new drink("Long Black", 4, 5);
+                    drinks[2] = new drink("Hot Chocolate", 4, 5);
+                    drinks[3] = new drink("Cappuccino", 4.50, 5.50);
+                    drinks[4] = new drink("Flat White", 4.50, 5.50);
+                    drinks[5] = new drink("Ginger Ale", 4);
+                    drinks[6] = new drink("Apple Juice", 4);
+                    drinks[7] = new drink("Apple and Fejoa", 4);
+                    drinks[8] = new drink("Apple, Peach and Raspberry", 4);
+                    return drinks;
+                }
+                function populateDrinks(){
+                    var h = 0;
+                    var menu = $('#drinkOptions');
+                    var subtitles = ["Hot Beverages", "Pheonix Juices"];
+                    var drinks = drinkData();
+                
+                    for (var i=0; i< drinks.length; i++){
+                        if (i===0 || i===5){
+                            menu.append('<br><h4 class="col-sm-offset-1">' + subtitles[h] + '</h4><br>');
+                            h++;
+                        }
+                        menu.append('<li class="row">\n\
+                            <span class="col-sm-offset-1 col-xs-5">' + drinks[i].name + '</span>\n\
+                            <span class="col-sm-2 col-xs-2">' + drinks[i].regular + '</span>\n\
+                            <span class="col-xs-offset-1 col-sm-offset-1 col-xs-2">' + drinks[i].large + '</span></li>');
+                    }
+                }
+                populateDrinks();
+                
+                function meal(food, desc, price){
+                    this.food = food;
+                    this.desc = desc;
+                    this.price = formatPrice(price);
+                }
+                function breakfastData(){
+                    var choices = [];
+                    choices[0] = new meal("Muesli (V)", "Coconut, Dried Apricot", 10);
+                    choices[1] = new meal("Pancakes (V)", "Served with whipped cream and Strawberries", 14);
+                    choices[2] = new meal("Mixed Berry Waffles (GF)", "Served with shipped cream", 14);
+                    choices[3] = new meal("Eggs Benedict", "Served with Salmon, Bacon or Mushrooms", 18);
+                    choices[4] = new meal("Cooked English Breakfast", "Eggs, Sausages, Mushrooms, Hash Browns, Tomatoes", 22);
+                    return choices;
+                }
+                function lunchData(){
+                    var choices = [];
+                    choices[0] = new meal("Salmon and Avocado Bap", "Served with a Side Salad", 7.50);
+                    choices[1] = new meal("Chicken and Brie Panini", "Served with Cranberry Sauce and a Side Salad", 8.50);
+                    choices[2] = new meal("Blue Cod Burger", "Served with a Lemon Wedge and a Side Salad", 12);
+                    choices[3] = new meal("Little Pig Burger", "Pulled Pork, Salad and Aoli", 13);
+                    return choices;
+                }
+                function populateMealMenu(){
+                    for (var meal = 0; meal<2; meal++){
+                        if (meal===0){
+                            var menu = $('#breakfastOptions');
+                            var choices = breakfastData();
+                        } else{
+                            var menu = $('#lunchOptions');
+                            var choices = lunchData();
+                        }
+                    
+                        for (var i=0; i< choices.length; i++){
+                        menu.append('<li><div class="row">\n\
+                                    <span class="menu-item-head col-sm-offset-1 col-xs-8">' + choices[i].food + '</span>\n\
+                                    <span class="col-xs-offset-1 col-xs-1">' + choices[i].price + '</span></div>\n\
+                                    <span class="menu-item-desc col-sm-offset-1 col-xs-11">' + choices[i].desc +'</span></li>');
+                        }
+                    }
+                }
+                populateMealMenu();
+            });
+        </script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){ 
+                //when menu type clicked -> darken background and stretch div
+                $('.film').click(function(){
+                    $(this).toggleClass("blackFilm"); 
+                    var parent = $(this).parent();
+                    if ($(this).hasClass("blackFilm")){
+//                            parent.css('padding-bottom', '50px');
+                            parent.css('height', '550px');
+                    } else{ 
+//                        parent.css('padding-bottom', '0px');
+                        parent.css('height', '25vh');
+                    }
+                });
+        });
+        </script>
+           <!--add smooth scrolling to all links-->
+   <script type="text/javascript">
+       $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".smoothScroll").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function(){
+        // Add hash (#) to URL
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+   </script>
+   
+      <!--Fix the navigation bar to the top when it hits the top of the screen-->
+   <script type="text/javascript">
+       $(document).ready(function() {
+           var touchTop = $('#topNav').offset().top;
+            function topAffix(){
+            var topOffset = $(window).scrollTop();
+        
+            if (topOffset > touchTop) { 
+               $('#topNav').addClass('fix-nav');
+            } else {
+               $('#topNav').removeClass('fix-nav'); 
+             }
+             if (topOffset > 300){
+                 $('#navHead').show();
+             } else{
+                 $('#navHead').hide();
+             }
+       }; 
+       topAffix();
+        //constantly check if offset is met during scolling
+        $(window).scroll(function() { 
+           topAffix();
+        });
+        
+        //hide nav when user clicks outside of it, or selects an option
+        $(window).click(function() {
+                $('#collapsableNav').collapse("hide");
+           });
+   });
+   </script>
+    </body>
+</html>
